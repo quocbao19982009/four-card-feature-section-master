@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset Style Sheet */
+
+:root {
+--Red:  hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very_Dark_Blue: hsl(234, 12%, 34%);
+--Grayish_Blue: hsl(229, 6%, 66%);
+--Very_Light_Gray: hsl(0, 0%, 98%);
+
+}
+
+* { 
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+  
+    
+}
+main {
+    
+    padding: 3rem 3rem; 
+    text-align: center;
+    
+    
+}
+
+h2 {
+    color:var(--Grayish_Blue);
+    font-weight: 200;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color:var(--Very_Dark_Blue);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.main-text {
+color: var(--Grayish_Blue);
+font-weight: 400;
+margin-bottom: 50px;
+line-height: 25px;
+font-size: 1rem;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article section {
+    border: 1px solid hsl(0, 0%, 98%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 7px 15px 5px
+    rgba(0, 0, 0, 0.2);
+    width:min(400px,100%) ;
+}
+
+.super {
+    border-top: 5px solid var(--Cyan)
+}
+.team {
+    border-top: 5px solid var(--Red)
+}
+.cal {
+    border-top: 5px solid var(--Blue)
+}
+.karma {
+    border-top: 5px solid var(--Orange)
+}
+
+section h3 {
+    color:var(--Very_Dark_Blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.info{
+    color: var(--Grayish_Blue);
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+.icon {
+    align-self: flex-end;
+    padding: 2rem;
+}
+ @media (min-width: 796px) {
+   
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+main {
+    width: min(1500px,90%)
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    " .    tea   .   "
+    "sup tea  cal   "
+    "sup kar cal  "
+    " .    kar .    ";
+    gap: 1.25rem;
+    width: 100%;
+    justify-items: center;
+}
+.super {
+    grid-area: sup;
+}
+.team {
+grid-area: tea;
+}
+.karma {
+    grid-area: kar;
+}
+.cal {
+    grid-area: cal;
+}
+
+
+article section {
+    padding: 1rem;
+   
+}
+.icon {
+    padding: 0;
+    padding-top: 2rem;
+}
+}  
